@@ -1,0 +1,10 @@
+<tr id="<%= dom_id entry %>">
+    <td><%= entry.name %></td>
+    <td><%= entry.phone %></td>
+    <td><%= entry.email %></td>
+    <td><%= entry.address %></td>
+    <td><%= link_to 'Show', entry %></td>
+    <td><%= link_to 'Edit', edit_entry_path(entry), :remote => true %></td>
+    <td><%= link_to 'Destroy', entry, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true  %></td>
+  </tr>
+
